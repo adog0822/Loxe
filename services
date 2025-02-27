@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Pitch Deck Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pitch Deck Service</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Discovery Package - $1,500</h3>
+            <p>Perfect for pre-seed startups needing core messaging and pitch framework.</p>
+        </div>
+        <div class="service-card">
+            <h3>Mid-Tier Package - $3,500</h3>
+            <p>For seed-stage startups with financial projections and market opportunity insights.</p>
+        </div>
+        <div class="service-card">
+            <h3>Premium Package - $6,000</h3>
+            <p>A fully customized investor-ready deck with advanced financial modeling and strategic consulting.</p>
+        </div>
+        <a href="contact.html" class="btn">Get in Touch</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pitch Deck Service. All rights reserved.</p>
+    </footer>
+</body>
+</html>
