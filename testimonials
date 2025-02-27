@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Pitch Deck Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pitch Deck Service</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"Thanks to Pitch Deck Service, we were able to present a compelling story to investors. The insights they provided were invaluable!" - SaaS Founder</p>
+        </div>
+        <div class="testimonial">
+            <p>"The regulatory strategy section was exactly what we needed to assure investors we could navigate the health-tech landscape." - Health-Tech CEO</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pitch Deck Service. All rights reserved.</p>
+    </footer>
+</body>
+</html>
