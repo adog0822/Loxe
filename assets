@@ -1,1 +1,10 @@
+pitch-deck-website/
+├── assets/
+│   ├── css/
+│   ├── images/
+│   └── js/
+├── _config.yml
+├── index.html
+├── about.html
+└── other-pages.html
 
