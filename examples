@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Deck Examples - Pitch Deck Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pitch Deck Service</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="examples">
+        <h2>Pitch Deck Examples</h2>
+        <p>Check out some examples of successful pitch decks we've crafted:</p>
+        <div class="example">
+            <h3>SaaS Startup</h3>
+            <img src="assets/saas-deck-example.png" alt="SaaS Pitch Deck Example">
+            <p>This deck helped a SaaS company secure seed funding by demonstrating strong market opportunity and growth potential.</p>
+        </div>
+        <div class="example">
+            <h3>Health-Tech Startup</h3>
+            <img src="assets/health-tech-deck-example.png" alt="Health-Tech Pitch Deck Example">
+            <p>This health-tech startup used their deck to communicate their regulatory strategy and scalability effectively.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pitch Deck Service. All rights reserved.</p>
+    </footer>
+</body>
+</html>
