@@ -1,0 +1,12 @@
+demo_mode: true
+demo_data:
+  company_name: "Acme Corporation"
+  aws_account_id: "123456789012"
+  regions: ["us-east-1", "us-west-2"]
+  compliance_standard: "SOC 2 Type II"
+
+simulated_data:
+  iam_users: 10
+  access_keys: 42
+  mfa_enabled_percentage: 70
+  old_access_keys_percentage: 25
