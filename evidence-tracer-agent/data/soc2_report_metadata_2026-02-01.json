@@ -1,0 +1,19 @@
+{
+  "report_date": "2026-02-01",
+  "generated_at": "2026-02-01 22:14:07 UTC",
+  "demo_mode": true,
+  "overall_score": 78,
+  "controls_assessed": 8,
+  "controls_compliant": 5,
+  "controls_needs_remediation": 2,
+  "controls_critical": 1,
+  "findings": {
+    "critical": 1,
+    "high": 2,
+    "medium": 1,
+    "low": 1,
+    "total": 5
+  },
+  "risk_posture": "MODERATE",
+  "risk_trend": "IMPROVING"
+}
