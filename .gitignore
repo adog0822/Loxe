@@ -15,3 +15,4 @@ output/*.json
 output/*.html
 .pytest_cache/
 .mypy_cache/
+evidence-tracer-agent/data/*.json
