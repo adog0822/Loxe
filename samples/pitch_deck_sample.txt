@@ -1,0 +1,61 @@
+Loxe Pitch Deck - AI-Powered Startup Intelligence Platform
+
+MARKET OPPORTUNITY
+
+The global artificial intelligence market is projected to reach $1.81 trillion by 2030, growing at a CAGR of 37.3% from 2023 to 2030.
+
+The startup ecosystem generated over $285 billion in venture capital funding in 2023, with early-stage companies representing 45% of all deals.
+
+Over 70% of startup pitch decks contain unverified market claims, leading to $4.5 billion in misallocated venture capital annually.
+
+PROBLEM
+
+Investors spend an average of 3 minutes and 44 seconds reviewing a pitch deck, making it nearly impossible to fact-check claims in real-time.
+
+72% of VCs report that inaccurate market data in pitch decks has led them to make at least one bad investment decision.
+
+Due diligence costs average $25,000 per deal, with market research comprising approximately 40% of that expense.
+
+SOLUTION
+
+Loxe Evidence Tracer is an AI-powered agent that automatically extracts and verifies claims from pitch decks, research papers, and business documents in under 60 seconds.
+
+Our proprietary NLP engine achieves 94% accuracy in claim extraction, compared to the industry standard of 78%.
+
+TRACTION
+
+Since launching our beta 6 months ago, we have onboarded 150 venture capital firms and accelerators as early adopters.
+
+Our platform has analyzed over 12,000 pitch decks and traced more than 45,000 individual claims.
+
+Monthly recurring revenue has grown 340% quarter-over-quarter, reaching $85,000 MRR.
+
+Customer retention rate stands at 96%, significantly above the SaaS industry average of 90%.
+
+COMPETITIVE ADVANTAGE
+
+Unlike competitors such as CB Insights and PitchBook, Loxe provides real-time claim verification rather than just data aggregation.
+
+Our evidence tracing technology is 5x faster than manual due diligence processes.
+
+We have filed 3 provisional patents covering our core claim extraction and evidence matching algorithms.
+
+FINANCIAL PROJECTIONS
+
+We project $2.5 million in ARR by end of 2025, growing to $15 million ARR by 2027.
+
+Our gross margin is 82%, consistent with top-quartile SaaS benchmarks.
+
+Customer acquisition cost is $1,200, with a lifetime value of $18,000, resulting in an LTV/CAC ratio of 15x.
+
+TEAM
+
+Our founding team has a combined 35 years of experience in AI, fintech, and venture capital.
+
+Our CTO previously led the NLP research team at Google DeepMind, publishing 12 peer-reviewed papers on information extraction.
+
+THE ASK
+
+We are raising a $3 million seed round at a $15 million pre-money valuation to expand our engineering team and accelerate go-to-market.
+
+Funds will be allocated: 60% engineering, 25% sales and marketing, 15% operations.
