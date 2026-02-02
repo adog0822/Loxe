@@ -1,1 +1,8 @@
 # Evidence Tracer Agent dependencies
+pyyaml
+streamlit>=1.30
+anthropic
+boto3
+reportlab
+requests
+pandas
