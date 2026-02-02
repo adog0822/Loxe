@@ -1,0 +1,123 @@
+{
+  "evidence_types": [
+    "access_keys",
+    "iam_policies",
+    "iam_roles",
+    "iam_users",
+    "mfa_status",
+    "overly_permissive_policies",
+    "password_policy"
+  ],
+  "coverage": {
+    "total_controls": 8,
+    "covered_count": 3,
+    "gap_count": 5,
+    "coverage_pct": 37.5,
+    "covered": {
+      "CC6.1": [
+        "iam_policies",
+        "iam_roles",
+        "iam_users",
+        "mfa_status",
+        "password_policy"
+      ],
+      "CC6.3": [
+        "access_keys"
+      ],
+      "CC6.7": [
+        "iam_policies",
+        "overly_permissive_policies"
+      ]
+    },
+    "gaps": {
+      "CC7.1": {
+        "name": "Infrastructure Changes",
+        "missing_evidence": [
+          "cloudtrail_events",
+          "config_rules",
+          "guardduty_findings",
+          "infrastructure_changes"
+        ]
+      },
+      "CC7.2": {
+        "name": "Security Configuration",
+        "missing_evidence": [
+          "config_compliance",
+          "security_hub_findings",
+          "inspector_findings",
+          "baseline_configs"
+        ]
+      },
+      "CC7.4": {
+        "name": "Monitoring & Logging",
+        "missing_evidence": [
+          "cloudwatch_alarms",
+          "log_groups",
+          "flow_logs",
+          "access_logs",
+          "trail_status"
+        ]
+      },
+      "CC8.1": {
+        "name": "Change Management",
+        "missing_evidence": [
+          "pipeline_executions",
+          "deployment_history",
+          "stack_changes",
+          "change_approvals"
+        ]
+      },
+      "CC8.2": {
+        "name": "Data Management",
+        "missing_evidence": [
+          "s3_encryption",
+          "rds_encryption",
+          "backup_configs",
+          "data_classification",
+          "lifecycle_policies"
+        ]
+      }
+    }
+  },
+  "scores": {
+    "freshness_score": 100.0,
+    "gap_score": 37.5,
+    "freshness_details": {
+      "iam_users": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      },
+      "iam_policies": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      },
+      "mfa_status": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      },
+      "access_keys": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      },
+      "password_policy": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      },
+      "iam_roles": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      },
+      "overly_permissive_policies": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      }
+    }
+  }
+}
