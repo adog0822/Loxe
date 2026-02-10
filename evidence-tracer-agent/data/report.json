@@ -1,0 +1,157 @@
+{
+  "evidence_types": [
+    "access_keys",
+    "iam_policies",
+    "iam_roles",
+    "iam_users",
+    "mfa_status",
+    "overly_permissive_policies",
+    "password_policy"
+  ],
+  "coverage": {
+    "total_controls": 8,
+    "covered_count": 3,
+    "gap_count": 5,
+    "coverage_pct": 37.5,
+    "covered": {
+      "CC6.1": [
+        "iam_policies",
+        "iam_roles",
+        "iam_users",
+        "mfa_status",
+        "password_policy"
+      ],
+      "CC6.3": [
+        "access_keys"
+      ],
+      "CC6.7": [
+        "iam_policies",
+        "overly_permissive_policies"
+      ]
+    },
+    "gaps": {
+      "CC7.1": {
+        "name": "Infrastructure Changes",
+        "missing_evidence": [
+          "cloudtrail_events",
+          "config_rules",
+          "guardduty_findings",
+          "infrastructure_changes"
+        ]
+      },
+      "CC7.2": {
+        "name": "Security Configuration",
+        "missing_evidence": [
+          "config_compliance",
+          "security_hub_findings",
+          "inspector_findings",
+          "baseline_configs"
+        ]
+      },
+      "CC7.4": {
+        "name": "Monitoring & Logging",
+        "missing_evidence": [
+          "cloudwatch_alarms",
+          "log_groups",
+          "flow_logs",
+          "access_logs",
+          "trail_status"
+        ]
+      },
+      "CC8.1": {
+        "name": "Change Management",
+        "missing_evidence": [
+          "pipeline_executions",
+          "deployment_history",
+          "stack_changes",
+          "change_approvals"
+        ]
+      },
+      "CC8.2": {
+        "name": "Data Management",
+        "missing_evidence": [
+          "s3_encryption",
+          "rds_encryption",
+          "backup_configs",
+          "data_classification",
+          "lifecycle_policies"
+        ]
+      }
+    }
+  },
+  "scores": {
+    "freshness_score": 100.0,
+    "gap_score": 37.5,
+    "freshness_details": {
+      "iam_users": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      },
+      "iam_policies": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      },
+      "mfa_status": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      },
+      "access_keys": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      },
+      "password_policy": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      },
+      "iam_roles": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      },
+      "overly_permissive_policies": {
+        "score": 100.0,
+        "age_hours": 0.0,
+        "label": "fresh"
+      }
+    }
+  },
+  "ai_analysis": {
+    "findings": [
+      {
+        "severity": "HIGH",
+        "control": "CC6.7",
+        "title": "Overly Permissive Admin Policy",
+        "description": "The policy 'AdminFullAccess' grants Action: * on Resource: * and is attached directly to user 'admin-user'. This violates the principle of least privilege required by CC6.7.",
+        "recommendation": "Replace the wildcard policy with scoped permissions per service. Attach policies to groups or roles instead of directly to users. Use AWS Access Analyzer to identify actually-used permissions."
+      },
+      {
+        "severity": "MEDIUM",
+        "control": "CC6.1",
+        "title": "MFA Not Enabled for All Console Users",
+        "description": "Users 'service-account' and 'stale-user' do not have MFA enabled. While service accounts may not need console access, 'stale-user' has console login history, creating an authentication gap.",
+        "recommendation": "Enforce MFA for all users with console access via an IAM policy condition on aws:MultiFactorAuthPresent. Disable console access for service accounts that only need programmatic access."
+      },
+      {
+        "severity": "MEDIUM",
+        "control": "CC6.3",
+        "title": "Stale Access Keys Without Rotation",
+        "description": "User 'service-account' has two active access keys, one of which was created 200 days ago and last used 150 days ago. User 'stale-user' has a key created 400+ days ago. Neither has been rotated within the 90-day best practice window.",
+        "recommendation": "Implement automated key rotation with a maximum age of 90 days. Deactivate the unused key for 'service-account' immediately. Use AWS Secrets Manager for automated rotation of service keys."
+      },
+      {
+        "severity": "LOW",
+        "control": "CC6.1",
+        "title": "Inactive User Account Detected",
+        "description": "User 'stale-user' has not logged in for 95 days and has an active access key. Dormant accounts with active credentials increase the attack surface.",
+        "recommendation": "Establish an automated process to detect accounts inactive for 90+ days. Disable credentials and notify the account owner. Remove the account if no response within 14 days."
+      }
+    ],
+    "summary": "Analysis identified 4 findings across 3 SOC 2 controls. One high-severity issue (overly permissive admin policy) requires immediate attention. Two medium-severity issues involve incomplete MFA enforcement and stale access keys. The IAM configuration shows a common pattern of initially broad permissions that have not been tightened as the organization matured.",
+    "risk_rating": "MEDIUM-HIGH"
+  }
+}
